@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Voice Range & Pitch Monitor",
+  "version": "1.0.0",
+  "description": "Đo nốt và tần số giọng hát từ âm thanh của tab đang phát.",
+  "permissions": ["tabCapture"],
+  "action": {
+    "default_title": "Voice Range Monitor",
+    "default_popup": "popup.html"
+  }
+}

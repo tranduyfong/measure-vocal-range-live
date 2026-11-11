@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Voice Range Monitor</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header><div class="brand-mark">♫</div><div><h1>Voice Range</h1><p>THEO DÕI GIỌNG HÁT</p></div><span class="live-dot" id="liveDot"></span></header>
+    <section class="pitch-card">
+      <div class="eyebrow">NỐT HIỆN TẠI</div>
+      <div class="note" id="note">—</div>
+      <div class="frequency" id="frequency">Chưa có tín hiệu</div>
+      <div class="meter"><div id="meterFill"></div></div>
+      <div class="meter-labels"><span>ÂM TRẦM</span><span>ÂM CAO</span></div>
+    </section>
+    <section class="range-card"><div class="range-title">QUÃNG GIỌNG TRONG PHIÊN</div><div class="range-values"><div><span class="range-note" id="lowNote">—</span><small>THẤP NHẤT</small></div><div class="range-divider"></div><div><span class="range-note" id="highNote">—</span><small>CAO NHẤT</small></div></div><div class="range-summary" id="rangeSummary">Bắt đầu phát media để ghi nhận quãng giọng</div></section>
+    <button id="toggle" class="primary">▶ &nbsp; Bắt đầu đo</button>
+    <div id="status" class="status">Âm thanh được phân tích cục bộ trong trình duyệt.</div>
+    <footer>Hãy phát nhạc/video có giọng hát rõ để có kết quả tốt.</footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
